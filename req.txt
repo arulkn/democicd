@@ -17,11 +17,12 @@
 - Updated the backend Dockerfile to use a specific Python version, run as a non-root user, and set environment variables for better logging and security.
 - Created a `docker-compose.yml` file to orchestrate the frontend and backend containers.
 - Successfully built and ran the application using Docker Compose. The application is now running and accessible at http://localhost.
+- Pushed the entire application, including Dockerfiles and docker-compose.yml, to the GitHub repository at https://github.com/arulkn/democicd.git.
+- Set up a CI/CD pipeline using GitHub Actions. The pipeline will build and push the frontend and backend Docker images to GitHub Container Registry on every push to the `master` branch.
 
 ## Further Steps
 
-- Store your Dockerfile and WebApp to Github.
-- Set up a CI/CD pipeline to automate the building and deployment of the application.
+- The CI/CD pipeline is set up to build and push images. The next step would be to add a deployment step to the pipeline, for example, to deploy the application to a cloud provider.
 - Implement user authentication.
 - Implement a feature to display a list of connected users.
 - Implement message history.
