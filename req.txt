@@ -1,0 +1,28 @@
+- create a simple react+fastapi app(chat app)
+- Use Docker to containerize your WebApp
+– Store your Dockerfile and WebApp to Github
+– Use CI/CD tool to automate the process
+- Monitor logs using tools like prometheus,grafana or any better tool of your choice
+- order these requirements based on your analysis.
+
+---
+
+## Current Progress
+
+- Created a simple React frontend and a FastAPI backend for a chat application.
+- Fixed a bug in the frontend React code that was causing an infinite loop.
+- Implemented a simple "hi" -> "how are you/" communication channel to test the WebSocket connection.
+- Verified that the frontend and backend can communicate with each other.
+- Updated the frontend Dockerfile to use a multi-stage build for a smaller and more secure production image. The new Dockerfile uses `node:16-alpine` to build the React app and `nginx:stable-alpine` to serve the static files.
+- Updated the backend Dockerfile to use a specific Python version, run as a non-root user, and set environment variables for better logging and security.
+- Created a `docker-compose.yml` file to orchestrate the frontend and backend containers.
+- Successfully built and ran the application using Docker Compose. The application is now running and accessible at http://localhost.
+
+## Further Steps
+
+- Store your Dockerfile and WebApp to Github.
+- Set up a CI/CD pipeline to automate the building and deployment of the application.
+- Implement user authentication.
+- Implement a feature to display a list of connected users.
+- Implement message history.
+- Set up monitoring for the application.
